@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Next Travels - Explore the World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-globe-asia"></i>
+                <h1>Where Next Travels</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600')">
+                <div class="hero-content">
+                    <h1>Discover Your Next Adventure</h1>
+                    <p>Where Next Travels brings you the world's most breathtaking destinations with curated travel experiences.</p>
+                    <a href="#packages" class="btn-primary">Explore Packages</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1600')">
+                <div class="hero-content">
+                    <h1>Travel Beyond Horizons</h1>
+                    <p>Unforgettable journeys crafted just for you. Experience luxury, adventure, and culture like never before.</p>
+                    <a href="#destinations" class="btn-primary">View Destinations</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1530789253388-582c4b3c0cf1?w=1600')">
+                <div class="hero-content">
+                    <h1>Your Journey, Our Passion</h1>
+                    <p>Let Where Next Travels be your guide to the most amazing places on Earth.</p>
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <span class="prev"><i class="fas fa-chevron-left"></i></span>
+            <span class="next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- Search / Book Section -->
+    <section class="book-section">
+        <div class="container">
+            <form class="book-form">
+                <div class="form-group">
+                    <label><i class="fas fa-map-marker-alt"></i> Destination</label>
+                    <input type="text" placeholder="Where are you going?">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-calendar-alt"></i> Check In</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-calendar-alt"></i> Check Out</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-users"></i> Guests</label>
+                    <input type="number" placeholder="2 Adults" min="1" value="2">
+                </div>
+                <button type="submit" class="btn-search">Search <i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Destinations</h2>
+                <p>Explore our hand-picked destinations that promise unforgettable experiences</p>
+            </div>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=600" alt="Bali">
+                        <div class="card-overlay">
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                            <span class="price">From ₹25,999</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bali, Indonesia</h3>
+                        <p><i class="fas fa-clock"></i> 5 Days / 4 Nights</p>
+                        <div class="card-footer">
+                            <span class="offer">15% OFF</span>
+                            <a href="#" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=600" alt="Paris">
+                        <div class="card-overlay">
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                            <span class="price">From ₹45,999</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Paris, France</h3>
+                        <p><i class="fas fa-clock"></i> 7 Days / 6 Nights</p>
+                        <div class="card-footer">
+                            <span class="offer">10% OFF</span>
+                            <a href="#" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1530533718754-001d2668365a?w=600" alt="Maldives">
+                        <div class="card-overlay">
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                            <span class="price">From ₹55,999</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Maldives</h3>
+                        <p><i class="fas fa-clock"></i> 6 Days / 5 Nights</p>
+                        <div class="card-footer">
+                            <span class="offer">20% OFF</span>
+                            <a href="#" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=600" alt="Tokyo">
+                        <div class="card-overlay">
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                            <span class="price">From ₹35,999</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Tokyo, Japan</h3>
+                        <p><i class="fas fa-clock"></i> 7 Days / 6 Nights</p>
+                        <div class="card-footer">
+                            <span class="offer">12% OFF</span>
+                            <a href="#" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Thailand">
+                        <div class="card-overlay">
+                            <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                            <span class="price">From ₹15,999</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bangkok, Thailand</h3>
+                        <p><i class="fas fa-clock"></i> 4 Days / 3 Nights</p>
+                        <div class="card-footer">
+                            <span class="offer">25% OFF</span>
+                            <a href="#" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600" alt="Dubai">
+                        <div class="card-overlay">
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                            <span class="price">From ₹30,999</span>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Dubai, UAE</h3>
+                        <p><i class="fas fa-clock"></i> 5 Days / 4 Nights</p>
+                        <div class="card-footer">
+                            <span class="offer">18% OFF</span>
+                            <a href="#" class="btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel Packages</h2>
+                <p>Choose from our exclusive travel packages designed for every kind of traveler</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card featured">
+                    <div class="package-badge">Best Value</div>
+                    <div class="package-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Adventure Package</h3>
+                    <div class="package-price">
+                        <span class="amount">₹29,999</span>
+                        <span class="per">/ person</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 5 Days / 4 Nights</li>
+                        <li><i class="fas fa-check"></i> Hotel + Breakfast</li>
+                        <li><i class="fas fa-check"></i> Guided Tours</li>
+                        <li><i class="fas fa-check"></i> Adventure Activities</li>
+                        <li><i class="fas fa-check"></i> Airport Transfers</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Book Package</a>
+                </div>
+                <div class="package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Beach Getaway</h3>
+                    <div class="package-price">
+                        <span class="amount">₹35,999</span>
+                        <span class="per">/ person</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 6 Days / 5 Nights</li>
+                        <li><i class="fas fa-check"></i> Beach Resort</li>
+                        <li><i class="fas fa-check"></i> All Meals Included</li>
+                        <li><i class="fas fa-check"></i> Water Sports</li>
+                        <li><i class="fas fa-check"></i> Spa Session</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Book Package</a>
+                </div>
+                <div class="package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>City Explorer</h3>
+                    <div class="package-price">
+                        <span class="amount">₹25,999</span>
+                        <span class="per">/ person</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> 4 Days / 3 Nights</li>
+                        <li><i class="fas fa-check"></i> City Center Hotel</li>
+                        <li><i class="fas fa-check"></i> Hop-on Hop-off Bus</li>
+                        <li><i class="fas fa-check"></i> Museum Pass</li>
+                        <li><i class="fas fa-check"></i> City Tour Guide</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Book Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We provide end-to-end travel services to make your journey seamless</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Flight Booking</h3>
+                    <p>Best deals on domestic and international flights with top airlines.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Hotel Reservations</h3>
+                    <p>Luxury to budget hotels with exclusive rates and complimentary upgrades.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>Comprehensive travel insurance for peace of mind throughout your trip.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car Rentals</h3>
+                    <p>Premium car rental services at your destination with flexible options.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Guided Tours</h3>
+                    <p>Expert local guides to show you the hidden gems of each destination.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Visa Assistance</h3>
+                    <p>Hassle-free visa processing and documentation support for all countries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>Countries Covered</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-smile"></i>
+                    <h3 class="counter" data-target="12000">0</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3 class="counter" data-target="150">0</h3>
+                    <p>Awards Won</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-suitcase"></i>
+                    <h3 class="counter" data-target="25000">0</h3>
+                    <p>Trips Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from our valued customers</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Where Next Travels made our Bali trip absolutely magical! Every detail was perfectly planned. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>Bali Explorer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best travel agency I've ever worked with! My honeymoon in the Maldives was unforgettable thanks to their amazing planning."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Raj">
+                        <div>
+                            <h4>Raj Patel</h4>
+                            <span>Maldives Honeymoon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"From Europe to Southeast Asia, Where Next Travels has been my go-to agency for years. Consistent quality and great prices!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <span>Frequent Traveler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest travel deals, destination guides, and exclusive offers straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We'd love to hear from you. Send us a message and we'll respond promptly.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Travel Street, Connaught Place<br>New Delhi - 110001, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 1800-123-4567<br>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@wherenexttravels.com<br>support@wherenexttravels.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sun: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Subject">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-globe-asia"></i>
+                        <h3>Where Next Travels</h3>
+                    </div>
+                    <p>Your trusted travel partner since 2010. We create unforgettable travel experiences that last a lifetime.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Top Destinations</h4>
+                    <ul>
+                        <li><a href="#">Bali, Indonesia</a></li>
+                        <li><a href="#">Paris, France</a></li>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Tokyo, Japan</a></li>
+                        <li><a href="#">Dubai, UAE</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Where Next Travels. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
